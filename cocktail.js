@@ -1,10 +1,18 @@
+const searchButton = document.getElementById('button-search')
+const inputFild = document.getElementById('search-fild')
+inputFild.addEventListener('keypress', (event) => {
+    if (event.keyCode == 13) {
+        searchButton.click()
+    }
+
+})
+
+
+
 const spinner = (spinnerStyle) => {
-    const spinner = document.querySelector('.spinner-border').style.display = spinnerStyle
+    document.querySelector('.spinner-border').style.display = spinnerStyle
 }
 spinner()
-
-
-
 const searchPlayer = () => {
     document.getElementById('detail').textContent = ''
     document.getElementById('container').textContent = ''
