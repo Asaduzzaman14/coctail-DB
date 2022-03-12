@@ -7,8 +7,6 @@ inputFild.addEventListener('keypress', (event) => {
 
 })
 
-
-
 const spinner = (spinnerStyle) => {
     document.querySelector('.spinner-border').style.display = spinnerStyle
 }
