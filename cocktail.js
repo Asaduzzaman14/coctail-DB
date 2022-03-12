@@ -1,7 +1,7 @@
 const searchButton = document.getElementById('button-search')
 const inputFild = document.getElementById('search-fild')
 inputFild.addEventListener('keypress', (event) => {
-    if (event.keyCode == 13) {
+    if (event.key == 'Enter') {
         searchButton.click()
     }
 
